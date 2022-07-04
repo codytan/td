@@ -2,16 +2,15 @@
 
 ## td工具介绍
 td命令行工具为方便针对标注平台数据上传、下载和处理的本地命令行工具，在较大数据量时，浏览器上传下载受限时可用命令行工具操作更高效。
-支持Mac（Arm构架和Intel构架）、Linux、Windows系统。  
-此项目为MIT协议（beta版代码整理中稍后提供），欢迎使用和反馈。  
+支持Mac（Arm构架和Intel构架）、Linux、Windows系统。
 
 ## 下载地址 
 下载成功后可以加入到本地的环境变量中，可在命令行终端中直接使用td命令，或者通过路径执行td命令。  
 <br>
-Linux版本  
-Mac-Arm版本  
-Mac-Intel版本  
-Windows版本     
+[Linux版本](https://github.com/codytan/td/releases/download/0.1.2/td_linux)  
+[Mac-Arm版本](https://github.com/codytan/td/releases/download/0.1.2/td_mac_arm)  
+[Mac-Intel版本](https://github.com/codytan/td/releases/download/0.1.2/td_mac_intel)  
+[Windows版本](https://github.com/codytan/td/releases/download/0.1.2/td_win.exe)     
 
 ## 配置账户及数据集
 AK参数可从账户的秘钥管理菜单中获取，目前项目经理角色支持开发者权限。 
@@ -44,6 +43,10 @@ td batch create
 //batch-dir为create命令自动生成的目录，也等同于批次号
 td push -d batch-dir
 ```
+如需要上传已经压缩好的zip文件，可将zip（对应和自定义目录一致）放入批次目录内，使用--zip命令进行上传
+```
+td push -d batch-dir --zip 
+```
 
 
 ## 下载数据
@@ -68,6 +71,9 @@ pull命令辅助参数有`--try`，用于单个文件下载失败时的重试次
 ```
 td check -d batch-dir
 ```
-  
 如遇到问题，可以在命令中加上`-v`参数，可以打印详细的执行日志信息，包括上传过程中的临时压缩包文件也会保留。  
+查看客户端版本。  
+```
+td version
+```
 
