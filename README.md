@@ -7,10 +7,11 @@ td命令行工具为方便针对标注平台数据上传、下载和处理的本
 ## 下载地址 
 下载成功后可以加入到本地的环境变量中，可在命令行终端中直接使用td命令（放入到环境变量中可将程序重命名为td，windows为td.exe），或者通过完整路径执行td命令。  
 <br>
-[Linux版本](https://github.com/codytan/td/releases/download/0.3.0/td_linux)  
-[Mac-Arm版本](https://github.com/codytan/td/releases/download/0.3.0/td_mac_arm)  
-[Mac-Intel版本](https://github.com/codytan/td/releases/download/0.3.0/td_mac_intel)  
-[Windows版本](https://github.com/codytan/td/releases/download/0.3.0/td_win.exe)     
+当前版本：0.3.2  
+[Linux版本](https://github.com/codytan/td/releases/download/0.3.2/td_linux)  
+[Mac-Arm版本](https://github.com/codytan/td/releases/download/0.3.2/td_mac_arm)  
+[Mac-Intel版本](https://github.com/codytan/td/releases/download/0.3.2/td_mac_intel)  
+[Windows版本](https://github.com/codytan/td/releases/download/0.3.2/td_win.exe)     
 
 ## 配置账户及数据集
 AK参数可从账户的秘钥管理菜单中获取，目前项目经理角色支持开发者权限。 
@@ -59,7 +60,7 @@ td pull -b batch-dir
 td pull -b all
 
 #下载一个批次源文件数据
-td pull -b batch-dir -t label
+td pull -b batch-dir -t source
 
 #下载整个数据集全部批次标注和源文件
 td pull -b batch-dir -t all
